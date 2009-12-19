@@ -1,0 +1,523 @@
+/*
+Theme Name: Hellfettle
+Theme URI: http://whatfettle.com/2008/12/themes/Hellfettle/
+Description: In your face, black and white Helvetica, inspired by the New York Subway
+Version: v0.0.1
+Author: Paul Downey
+Author URI: http://blog.whatfettle.com
+*/
+
+/* Reset rules */
+html,
+body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	line-height: 1.4;
+	font-family: inherit;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img {
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol, ul {
+	list-style: none;
+}
+q:before, q:after,
+blockquote:before, blockquote:after {
+	content: "";
+}
+input { vertical-align:middle; }
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* hidden from IE5 Mac */
+.clear {display:inline-block;}
+
+
+/*
+ *  global
+ */
+html,
+body {
+	color: #111;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: "HelveticaNeue-Roman", "Helvetica 55 Roman", Helvetica, Geneva, sans-serif;
+	line-height: 150%;
+}
+
+/*
+ *  links
+ */
+a,
+a:active,
+a:link,
+a:visited {
+	color: #000;
+	background: transparent;
+	text-decoration: none;
+	border-bottom: dotted 1px #ccc;
+	padding-bottom: 0px;
+}
+
+h2 a,
+h2 a:active,
+h2 a:link,
+h2 a:visited,
+#sidebar a,
+#sidebar a:active,
+#sidebar a:link,
+#sidebar a:visited {
+	border: none;
+}
+
+a:hover,
+a:focus,
+h2 a:hover,
+h2 a:focus,
+#sidebar a:hover,
+#sidebar a:focus {
+	border-bottom: solid;
+}
+
+#header a,
+#header a:active,
+#header a:link,
+#header a:visited,
+#footer a,
+#footer a:active,
+#footer a:link,
+#footer a:visited {
+	color: #fff;
+	border: none;
+}
+
+#header a:hover,
+#header a:focus,
+#footer a:hover,
+#footer a:focus,
+#sidebar a:hover,
+#sidebar a:focus {
+	border-bottom: solid;
+}
+
+/*
+ *  header
+ */
+#wrapper {
+}
+
+#header {
+	background: #000;
+	color: #fff;
+	padding: 1.2em 0em 1.2em 3em;
+	border-bottom: solid #eee 2px;
+	font-size: 1.3em;
+}
+
+#title {
+	font-size: 4.0em;
+	font-weight: bold;
+	letter-spacing:  -4px;
+	margin: 0;
+	line-height: 0.5em;
+}
+
+#description {
+	margin: 0;
+	line-height: 0.5em;
+	margin: -0.7em 0 0 0.25em;
+}
+
+/*
+ *  moral compass
+ */
+#icon {
+	position:absolute;
+	top: 2em; right: 3.3em;
+	padding: 2px 2px 2px 2px;
+	width: 100px;
+	height: 100px;
+	background-image: url('http://whatfettle.com/psd/moral-compass-neg-200.png');
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-position: center;
+	border: solid 4px #fff;
+	text-indent: -2.5em;
+}
+
+/*
+ *  footer
+ */
+#footer {
+	clear: both;
+	background: #000;
+	color: #fff;
+	border-top: solid #eee 2px;
+	padding: 50px 50px 30px 50px;
+}
+	
+#footer p {
+	font-size: 0.9em;
+	margin: 0;
+}
+
+.dictionary {
+	font-family: Baskerville, Georgia, sans-serif;
+	font-size: 1.5em;
+	padding-bottom: 2em;
+}
+
+.dictionary dt {
+	font-size: 1.5em;
+	line-height: 1;
+	width: 5em;
+	float: left;
+	font-weight: normal;
+}
+
+.dictionary dd {
+	margin-left: 8.5em;
+}
+
+#feed-links {
+}
+
+#license {
+	position:absolute;
+	right: 3em;
+}
+
+/*
+ *  layout
+ */
+#outer {
+	width: 60em;
+}
+
+#sidebar {
+	float: left;
+	width: 14em;
+	padding: 1em 0em 2em 3.8em;
+	overflow: hidden;
+}
+
+#container {
+	padding-top: 1em;
+	padding-left: 2em;
+	float: left;
+	width: 40em;
+}
+
+/*
+ *  sidebar
+ */
+
+/*
+ *  flickr photos
+ */
+#sidebar .sb-flickr div {
+	padding: 10px 2px 10px 0px;
+}
+
+#sidebar .sb-flickr img,
+.post-entry img,
+.gravatar {
+	border: 1px solid #ccc;
+	padding: 3px;
+	margin: 5px 20px 5px 0px;
+}
+
+#sidebar .sb-flickr a:hover img,
+#sidebar .sb-flickr a:focus img {
+	background-color: #eee;
+}
+
+#sidebar .sb-flickr a:hover,
+#sidebar .sb-flickr a:focus {
+	border: none;
+}
+
+input[type='submit'] {
+	border: 1px outset #999;
+	color: #fff;
+	background-color: #000;
+}
+
+#sidebar .feedlink {
+	background: url('http://whatfettle.com/psd/feed.png') no-repeat;
+	padding-left: 2em;
+	color: white;
+}
+
+
+/*
+ *  content
+ */
+h2 {
+	color: #000;
+	font-size: 1.7em;
+	font-weight: bold;
+	margin: 0.5em 0 0.5em 0;
+	text-align: left;
+}
+
+h2 a {
+	border-bottom: none;
+}
+
+#content img {
+	display: block;
+	padding: 3px;
+	margin: 5px 3px 0;
+}
+
+
+/*
+ *  dotted list
+ */
+#popular-posts {
+	padding: 3px;
+	margin-bottom: 25px;
+}
+
+#popular-posts ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+	border: none;
+}
+
+#popular-posts ul li {
+	margin-left: 0;
+	padding-left: 2px;
+	border: none;
+	list-style: none;
+	display: inline;
+}
+
+#popular-posts ul li:before {
+	content: " \2022  ";
+}
+	
+#popular-posts ul li.first:before {
+	content: "";
+}
+
+/*
+ *  post
+ */
+.post-container {
+	width: 40em;
+}
+
+.post-header {
+	width: 40em;
+	border-top: solid 2px #222;
+	border-bottom: solid 1px #222;
+	margin-bottom: 2em;
+}
+
+.post-footer {
+	margin-top: 2em;
+}
+
+p.post-date-single, 
+div.post-footer p {
+	text-align: center;
+}
+
+.post-content {
+	margin-left: 0em;
+	padding-bottom: 1em;
+}
+
+div.post-entry blockquote {
+	border-left: 0.5em solid #222;
+	font-size: 0.9em;
+	padding-left: 1em;
+	margin-left: 1em;
+}
+
+div.post-entry p {
+	line-height: 130%;
+	margin: 1em 0;
+}
+
+div.post-entry ul li {
+	list-style: square;
+}
+
+div.post-entry ol {
+	list-style-type: decimal;
+}
+
+div.post-entry ul li,
+div.post-entry ol li {
+	line-height: 150%;
+	margin: 0.2em 0em 0.2em 2em;
+}
+
+div.post-entry dl dd {
+	margin: 0.2em 0em 0.2em 2em;
+}
+
+div.post-entry dt {
+	font-weight: bold;
+}
+
+dl.screenplay dt:after {
+	content: ":";
+}
+
+sup {
+	font-size: 0.7em;
+	font-weight: bold;
+	vertical-align: 0.4em;
+	margin-left: -0.2em;
+}
+
+i {
+	font-style: italic;
+}
+
+/*
+ *  Navigation
+ */
+div.navigation {
+	clear: both;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 1em 0em 1em 0em;
+}
+
+div.nav-left, div.nav-right {
+	text-align: center;
+	margin: 0 auto;
+	width: 49%;
+}
+
+.alignleft, div.nav-left {
+	float: left;
+}
+
+.alignright, div.nav-right  {
+	float: right;
+}
+
+/*
+ *  Comments
+ */
+#comments {
+	margin-top: 2em;
+	padding-top: 2em;
+	border-top: solid #eee 2px;
+}
+
+#comments ol li {
+	background: #f6f7f9;
+	color: #111;
+	padding: 0.5em 1em;
+	margin-bottom: 0.5em;
+}
+#comments ol li.alt {
+	background: #e7eaed;
+	color: #111;
+}
+#comments ol li p {
+	margin: 0.5em 0;
+}
+#comments ol li p.comment-metadata {
+	font-size: 0.9em;
+}
+
+#comments img.gravatar {
+	float:right;
+	position: relative; top: -1em; 
+	margin-left: 1em;
+}
+
+h3#comment-count, 
+h4#comment-header {
+	text-align: center;
+}
+
+h3#comment-count {
+	font-size: 0.9em;
+}
+h4#comment-header {
+	font-size: 1.6em;
+	font-weight: normal;
+	margin: 0.1em 0 1em 0;
+}
+
+h4#respond {
+	font-size: 1.3em;
+	font-weight: normal;
+	margin: 2em 0 0 0;
+}
+div.formcontainer p {
+	margin: 0 0 1em 0;
+}
+
+/*
+ *  Tweets
+ */
+#tweets li {
+	list-style: square;
+}
+
+#tweets ul li {
+	line-height: 150%;
+	margin: 0.2em 0em 0.2em 2em;
+}
+
+#tweets .published:before {
+	content: " \2015  ";
+}
+
+/*
+ *  hreview
+ */
+.hreview {
+	margin-top: 1em;
+}
+
+.hreview .fn {
+	font-weight: bold;
+}
+
+/*
+ *
+ */
+pre {
+	border-left: 0.5em solid #222;
+	font-size: 0.9em;
+	padding-left: 1em;
+	margin-left: 1em;
+	font-family: "Courier New", Courier, monospace;
+}
